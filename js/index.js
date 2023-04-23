@@ -1,0 +1,1 @@
+basicShapesApp.init()
