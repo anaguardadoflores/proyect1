@@ -2,7 +2,7 @@ const basicShapesApp = {
     appName: "",
     author: "Ana Guardado & Jaime Boukhrij",
     canvasSize: {
-        w: window.innerWidth,
+        w: 16100,
         h: 1080
     },
     players: [],
@@ -135,11 +135,11 @@ const basicShapesApp = {
         this.ctx.fillStyle = "white";
         this.ctx.fillRect(6300, 580, 400, 180);
 
-        // //duodecima plataforma
+        //duodecima plataforma
         this.ctx.fillStyle = "white";
         this.ctx.fillRect(6700, 580, 400, 70);
 
-        // quinta plataforma principal 
+        //quinta plataforma principal 
         this.ctx.fillStyle = "pink";
         this.ctx.fillRect(7300, 900, 150, this.canvasSize.h);
 
@@ -147,7 +147,7 @@ const basicShapesApp = {
         this.ctx.fillStyle = "purple";
         this.ctx.fillRect(7300, 810, 90, 90);
 
-        // //decimocuarta plataforma
+        //decimocuarta plataforma
         this.ctx.fillStyle = "white";
         this.ctx.fillRect(7450, 900, 1000, 50);
 
@@ -159,7 +159,7 @@ const basicShapesApp = {
         this.ctx.fillStyle = "purple";
         this.ctx.fillRect(7800, 675, 300, 45);
 
-        //decimoquinta plataforma
+        //sexta plataforma flotante
         this.ctx.fillStyle = "purple";
         this.ctx.fillRect(8455, 810, 90, 90);
 
@@ -167,7 +167,7 @@ const basicShapesApp = {
         this.ctx.fillStyle = "blue";
         this.ctx.fillRect(8550, 680, 120, 220);
 
-        // septima plataforma principal 
+        //septima plataforma principal 
         this.ctx.fillStyle = "pink";
         this.ctx.fillRect(9000, 900, 800, this.canvasSize.h);
 
@@ -178,13 +178,73 @@ const basicShapesApp = {
         //decimoseptima plataforma
         this.ctx.fillStyle = "blue";
         this.ctx.fillRect(9490, 760, 300, 70);
+        
+        //septima plataforma flotante
+        this.ctx.fillStyle = "purple";
+        this.ctx.fillRect(10000, 700, 300, 45);
+        
+        //octava plataforma flotante
+        this.ctx.fillStyle = "purple";
+        this.ctx.fillRect(11000, 700, 300, 45);
+        
+        //novena plataforma flotante
+        this.ctx.fillStyle = "purple";
+        this.ctx.fillRect(11500, 600, 300, 45);
+        
+        //decima plataforma flotante
+        this.ctx.fillStyle = "purple";
+        this.ctx.fillRect(10500, 800, 300, 45);
+        
+        //octava plataforma principal
+        this.ctx.fillStyle = "pink";
+        this.ctx.fillRect(12000, 900, 2400, this.canvasSize.h);
+
+        //undecima plataforma flotante
+        this.ctx.fillStyle = "purple";
+        this.ctx.fillRect(12500, 700, 200, 45);
+
+        //duodecima plataforma flotante
+        this.ctx.fillStyle = "purple";
+        this.ctx.fillRect(13500, 700, 200, 45);
+
+        //decimooctava plataforma
+        this.ctx.fillStyle = "blue";
+        this.ctx.fillRect(14000, 800, 100, 100);
+
+        //decimonovena plataforma
+        this.ctx.fillStyle = "red";
+        this.ctx.fillRect(14100, 700, 100, 200);
+
+        //vigesimo plataforma
+        this.ctx.fillStyle = "green";
+        this.ctx.fillRect(14200, 600, 100, 300);
+
+        //vigesimoprimera plataforma
+        this.ctx.fillStyle = "white";
+        this.ctx.fillRect(14300, 500, 100 , 400);
+
+        //decimotercera plataforma flotante
+        this.ctx.fillStyle = "purple";
+        this.ctx.fillRect(14800, 700, 200, 45);
+
+        //novena plataforma principal
+        this.ctx.fillStyle = "pink";
+        this.ctx.fillRect(15300, 900, 800, this.canvasSize.h);
+
+        //vigesimosegunda plataforma
+        this.ctx.fillStyle = "pink";
+        this.ctx.fillRect(16000, 200, 100, 700);
+
+        //vigesimotercera plataforma
+        this.ctx.fillStyle = "gray";
+        this.ctx.fillRect(15500, 850, 300, 50);
 
     },
 
     clearAll() {
         this.ctx.clearRect(0,
             0,
-            window.innerWidth,
+            99999,
             1080,
         )
 
