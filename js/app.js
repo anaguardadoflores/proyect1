@@ -44,6 +44,9 @@ const basicShapesApp = {
                 this.drawAll()
                 //    this.again()
             }
+            this.players.forEach(player => {
+                if (player.gameOver() || player.finish()) this.botomStart = false
+            })
 
         }, 1000 / this.fps)
 
@@ -54,6 +57,9 @@ const basicShapesApp = {
 
             if (key == 'c' || key == "C") {
                 this.botomStart = true
+                this.reset()
+                clearInterval(this.interval)
+                this.init()
                 this.backgroundaudio.play()
             }
 
@@ -170,8 +176,6 @@ const basicShapesApp = {
     },
 
     reset() {
-
-
         this.players = [],
             this.enemies = [],
             this.background = [],
@@ -186,28 +190,9 @@ const basicShapesApp = {
         this.imgPrinc2.src = "./img/portada.png"
         this.ctx.drawImage(
             this.imgPrinc2,
-            900, 100, 800, 850
+            0, 0, 1920, 1080
         )
 
-        this.imgPrinc3 = new Image()
-        this.imgPrinc3.src = "./img/start.png"
-        this.ctx.drawImage(
-            this.imgPrinc3,
-            150, 300, 200, 200
-        )
-
-        this.imgPrinc = new Image()
-        this.imgPrinc.src = "./img/teclas.png"
-        this.ctx.drawImage(
-            this.imgPrinc,
-            500, 300, 200, 200
-        )
-        this.imgPrinc4 = new Image()
-        this.imgPrinc4.src = "./img/tittle.png"
-        this.ctx.drawImage(
-            this.imgPrinc4,
-            300, 600, 300, 300
-        )
     },
 
     clearAll() {

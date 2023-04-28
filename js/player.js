@@ -185,7 +185,7 @@ class Player {
     }
     walkPlat() {
         for (let i = 0; i < this.map.length; i++) {
-            if (this.playerSpects.pos.x + this.playerSpects.size.w >= this.map[i].mapSpects.pos.x + (this.playerSpects.size.w / 2) &&
+            if (this.playerSpects.pos.x + this.playerSpects.size.w >= this.map[i].mapSpects.pos.x &&
                 this.playerSpects.pos.x < this.map[i].mapSpects.pos.x + this.map[i].mapSpects.size.w &&
                 this.playerSpects.pos.y + this.playerSpects.size.h < this.map[i].mapSpects.pos.y + this.map[i].mapSpects.size.h &&
                 this.playerSpects.pos.y + this.playerSpects.size.h >= this.map[i].mapSpects.pos.y) {
@@ -193,7 +193,6 @@ class Player {
                 this.playerSpects.vel.y = 50
             }
         }
-
     }
 
     downColission() {
@@ -227,13 +226,9 @@ class Player {
         if (this.playerSpects.pos.x + this.playerSpects.size.w >= this.map[38].mapSpects.pos.x &&
             this.playerSpects.pos.x < this.map[38].mapSpects.pos.x + this.map[38].mapSpects.size.w &&
             this.playerSpects.size.h + this.playerSpects.pos.y > this.map[38].mapSpects.pos.y) {
-            this.playerSpects.vel.y = 0
+            return true
 
-            if (this.playerSpects.pos.y + this.playerSpects.size.h < 1060) {
-                this.playerSpects.pos.y += this.playerSpects.vel.y
-                this.playerSpects.vel.y += 10
 
-            }
         }
 
     }
