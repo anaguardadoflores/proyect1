@@ -137,7 +137,7 @@ const basicShapesApp = {
             new Map(this.ctx, "tramp", 3265, 850, 185, 51, 49),
             new Map(this.ctx, "tramp", 3540, 850, 185, 51, 50),
             new Map(this.ctx, "salida", 500, 200, 200, 200, 200),
-            new Map(this.ctx, "trophy", 15500, 300, 300, 650, 48),
+
             new Map(this.ctx, "ground", 0, 886, 2930, this.canvasSize.h, 1),
             new Map(this.ctx, "ground", 3115, 886, 1000, this.canvasSize.h, 8),
             //40
@@ -151,6 +151,7 @@ const basicShapesApp = {
             new Map(this.ctx, "ground", 12000, 886, 2500, this.canvasSize.h, 38),
             new Map(this.ctx, "ground", 15300, 886, 900, this.canvasSize.h, 46),
             new Map(this.ctx, "ground", 16000, 200, 100, 700, 47),
+            new Map(this.ctx, "trophy", 15500, 300, 300, 650, 48),
             //50
 
         )

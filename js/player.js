@@ -5,7 +5,7 @@ class Player {
         this.playerSpects = {
             size: { w: 100, h: 120 },
             pos: { x: 400, y: 840 },
-            vel: { x: 0, y: -330 }
+            vel: { x: 50, y: -330 }
         }
         this.mapSped = 15
         this.ground = 890
@@ -184,7 +184,7 @@ class Player {
         }
     }
     walkPlat() {
-        for (let i = 0; i < this.map.length; i++) {
+        for (let i = 0; i < this.map.length - 1; i++) {
             if (this.playerSpects.pos.x + this.playerSpects.size.w >= this.map[i].mapSpects.pos.x &&
                 this.playerSpects.pos.x < this.map[i].mapSpects.pos.x + this.map[i].mapSpects.size.w &&
                 this.playerSpects.pos.y + this.playerSpects.size.h < this.map[i].mapSpects.pos.y + this.map[i].mapSpects.size.h &&
@@ -223,13 +223,15 @@ class Player {
     finish() {
 
 
-        if (this.playerSpects.pos.x + this.playerSpects.size.w >= this.map[38].mapSpects.pos.x &&
-            this.playerSpects.pos.x < this.map[38].mapSpects.pos.x + this.map[38].mapSpects.size.w &&
-            this.playerSpects.size.h + this.playerSpects.pos.y > this.map[38].mapSpects.pos.y) {
-            return true
+        // if (this.playerSpects.pos.x + this.playerSpects.size.w >= this.map[49].mapSpects.pos.x &&
+        //     this.playerSpects.pos.x < this.map[49].mapSpects.pos.x + this.map[49].mapSpects.size.w &&
+        //     this.playerSpects.size.h + this.playerSpects.pos.y > this.map[49].mapSpects.pos.y)
+        //     return true
 
 
-        }
+
+
+
 
     }
 
@@ -283,6 +285,10 @@ class Player {
             this.playerSpects.pos.x + this.playerSpects.size.w >= this.map[50].mapSpects.pos.x + this.map[50].mapSpects.size.w) return true
 
         if (this.ColissionDead()) return true
+
+        if (this.playerSpects.pos.x + this.playerSpects.size.w >= this.map[50].mapSpects.pos.x &&
+            this.playerSpects.pos.x < this.map[50].mapSpects.pos.x + this.map[50].mapSpects.size.w &&
+            this.playerSpects.size.h + this.playerSpects.pos.y > this.map[50].mapSpects.pos.y) return true
     }
 
 

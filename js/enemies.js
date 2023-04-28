@@ -114,16 +114,16 @@ class Enemies {
         if (this.enemiesSpects.id === 4) {
 
             if (this.enemiesSpects.pos.x <= this.map[15].mapSpects.pos.x - 50) this.turnHorizontal()
-            if (this.enemiesSpects.pos.x + this.enemiesSpects.size.w >= this.map[48].mapSpects.pos.x + 70) this.turnHorizontal()
+            if (this.enemiesSpects.pos.x + this.enemiesSpects.size.w >= this.map[47].mapSpects.pos.x + 70) this.turnHorizontal()
         }
         if (this.enemiesSpects.id === 5) {
             if (this.enemiesSpects.pos.x <= this.map[15].mapSpects.pos.x - 50) this.turnHorizontal()
-            if (this.enemiesSpects.pos.x + this.enemiesSpects.size.w >= this.map[48].mapSpects.pos.x + 70) this.turnHorizontal()
+            if (this.enemiesSpects.pos.x + this.enemiesSpects.size.w >= this.map[47].mapSpects.pos.x + 70) this.turnHorizontal()
         }
 
         if (this.enemiesSpects.id === 10) {
             if (this.enemiesSpects.pos.x <= this.map[13].mapSpects.pos.x - 70) this.turnHorizontal()
-            if (this.enemiesSpects.pos.x + this.enemiesSpects.size.w >= this.map[47].mapSpects.pos.x + 65) this.turnHorizontal()
+            if (this.enemiesSpects.pos.x + this.enemiesSpects.size.w >= this.map[46].mapSpects.pos.x + 65) this.turnHorizontal()
         }
 
         this.enemiesSpects.pos.x += this.enemiesSpects.vel.x
